@@ -43,16 +43,15 @@ require EASY_RESERVATION_Include . 'public.php';
 require EASY_RESERVATION_Include . 'ajax.php';
 require EASY_RESERVATION_Include . 'core.php';
 
- $Easy_Reservation_Core;
+$Easy_Reservation_Core;
+
+
 function Easy_Reservation_Core()
 {
-
+ 
 }
 global $Easy_Reservation_Core;
 $Easy_Reservation_Core = new Easy_Reservation_Core();
 
 
-//add_action("init","Easy_Reservation_Core");
-
-
-
+add_action("init", "Easy_Reservation_Core");

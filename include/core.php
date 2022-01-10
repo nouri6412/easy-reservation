@@ -87,7 +87,6 @@ class Easy_Reservation_Core
 
         wp_localize_script('easy_reservation_ajax_script', 'easy_reservation_object', array(
             'ajaxurl' => admin_url('admin-ajax.php'),
-            'page' => $_GET['page'] ? sanitize_text_field($_GET['page']) : '',
             'current_page' => get_query_var('paged') ? get_query_var('paged') : 1,
             'max_page' => $wp_query->max_num_pages
         ));
